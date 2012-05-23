@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Mole Game</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+        </script>
+    </head>
+    <body>
+        <div data-role="page" id="page1">
+            <header data-role="header">
+                <h3>
+                    Mole Game
+                </h3>
+            </header>
+            <div data-role="content" id="content">
+                <div class="ui-grid-c">
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                    <div class="ui-block-c">
+                    </div>
+                    <div class="ui-block-d">
+                    </div>
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                    <div class="ui-block-c">
+                    </div>
+                    <div class="ui-block-d">
+                    </div>
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                    <div class="ui-block-c">
+                    </div>
+                    <div class="ui-block-d">
+                    </div>
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                    <div class="ui-block-c">
+                    </div>
+                    <div class="ui-block-d">
+                    </div>
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                    <div class="ui-block-c">
+                    </div>
+                    <div class="ui-block-d">
+                    </div>
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                    <div class="ui-block-c">
+                    </div>
+                    <div class="ui-block-d">
+                    </div>
+                </div>
+            </div>
+            <footer data-role="footer" data-position="fixed">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="refresh">
+                                Start
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="gear">
+                                Edit
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <script>
+        	$(document).ready(function() {
+		        $('.ui-grid-c div').height((($('#page1').height()-($('header').height() + $('footer').height()))/6));
+        		$(window).resize(function() {
+		            $('.ui-grid-c div').height((($('#page1').height()-($('header').height() + $('footer').height()))/6));
+	            });
+            });
+        </script>
+    </body>
+</html>
