@@ -1,0 +1,12 @@
+#page {
+    background: #629632;
+}           
+#content .ui-grid-c .field{
+	background: url('../img/lawn.png') center bottom no-repeat;
+}
+#content .ui-grid-c .hill{
+    background: url('../img/hill.png') center bottom no-repeat;
+}  
+#content .ui-grid-c .mole{
+	background: url('../img/mole.png') center bottom no-repeat;
+}
