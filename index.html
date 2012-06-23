@@ -1,81 +1,82 @@
 <!DOCTYPE html> 
 <html> 
 	<head> 
-	<title>Mole Game</title> 
-	
+	<title>Mole Game</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-	<style>
-		body{
-			background: green url('img/lawn.png');
-		}
-		.fields{
-			background: green url('img/lawn.png');
-		}
-		.field{
-			height: 60px;
-		}
-		.field.hill{
-			background: url('img/hill.png') no-repeat center;
-		}
-		.field.hill.mole{
-			background: url('img/mole.png') no-repeat center;
-		}
-	</style>
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
 	<script src="js/jquery.timer.js"></script>
 	<script src="js/mole_game.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
 </head> 
 <body> 
-	<div data-role="page">
-		<div data-role="header">
-			<h1>Hit the Mole</h1>
-		</div><!-- /header -->
-	
-		<div data-role="content" class="fields">
-			<div>
-				Level: <span id="level">1</span> Points: <span id="points">0</span>
-			</div>
-			<div class="ui-grid-d">
-				<div class="ui-block-a field empty"></div>
-				<div class="ui-block-b field empty"></div>
-				<div class="ui-block-c field empty"></div>
-				<div class="ui-block-d field empty"></div>
-				<div class="ui-block-e field empty"></div>				
-				<div class="ui-block-a field empty"></div>
-				<div class="ui-block-b field empty"></div>
-				<div class="ui-block-c field empty"></div>
-				<div class="ui-block-d field empty"></div>
-				<div class="ui-block-e field empty"></div>
-				<div class="ui-block-a field empty"></div>
-				<div class="ui-block-b field empty"></div>
-				<div class="ui-block-c field empty"></div>
-				<div class="ui-block-d field empty"></div>
-				<div class="ui-block-e field empty"></div>
-				<div class="ui-block-a field empty"></div>
-				<div class="ui-block-b field empty"></div>
-				<div class="ui-block-c field empty"></div>
-				<div class="ui-block-d field empty"></div>
-				<div class="ui-block-e field empty"></div>
-				<div class="ui-block-a field empty"></div>
-				<div class="ui-block-b field empty"></div>
-				<div class="ui-block-c field empty"></div>
-				<div class="ui-block-d field empty"></div>
-				<div class="ui-block-e field empty"></div>						
-			</div>
-		</div><!-- /content -->
-		<div data-role="footer"  data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#" data-icon="grid" id="start">Start</a></li>
-					<li><a href="#" data-icon="star" id="pause">Pause</a></li>
-					<li><a href="#" data-icon="gear">Setup</a></li>
-				</ul>
-			</div><!-- /navbar -->
-		</div><!-- /footer -->
-	</div><!-- /page -->
+	<div data-role="page" id="page"> 
+	    <div data-role="header">
+	        <a class="ui-button-left">Punkte: <span class="game-points">0</span></a>
+	        <h3></h3>
+	        <a class="ui-button-right">Level: <span class="game-level">1</span></a>
+	    </div> 
+	    <div data-role="content" id="content">            
+	        <div class="ui-grid-c">
+	            <div class="field empty ui-block-a">
+	            </div>
+	            <div class="field empty ui-block-b">
+	            </div>
+	            <div class="field empty ui-block-c">
+	            </div>
+	            <div class="field empty ui-block-d">
+	            </div>
+	            <div class="field empty ui-block-a">
+	            </div>
+	            <div class="field empty ui-block-b">
+	            </div>
+	            <div class="field empty ui-block-c">
+	            </div>
+	            <div class="field empty ui-block-d">
+	            </div>
+	            <div class="field empty ui-block-a">
+	            </div>
+	            <div class="field empty ui-block-b">
+	            </div>
+	            <div class="field empty ui-block-c">
+	            </div>
+	            <div class="field empty ui-block-d">
+	            </div>
+	            <div class="field empty ui-block-a">
+	            </div>
+	            <div class="field empty ui-block-b">
+	            </div>
+	            <div class="field empty ui-block-c">
+	            </div>
+	            <div class="field empty ui-block-d">
+	            </div>
+	            <div class="field empty ui-block-a">
+	            </div>
+	            <div class="field empty ui-block-b">
+	            </div>
+	            <div class="field empty ui-block-c">
+	            </div>
+	            <div class="field empty ui-block-d">
+	            </div>
+	            <div class="field empty ui-block-a">
+	            </div>
+	            <div class="field empty ui-block-b">
+	            </div>
+	            <div class="field empty ui-block-c">
+	            </div>
+	            <div class="field empty ui-block-d">
+	            </div>
+	        </div>
+	    </div>
+	        <footer data-role="footer" data-position="fixed">
+	        <div data-role="navbar" data-iconpos="top">
+	            <ul>
+	                <li><a href="#restart" data-icon="refresh">Neustart</a></li>
+	            </ul>
+	        </div>
+	    </footer>
+	</div>
 </body>
 </html>
