@@ -10,7 +10,7 @@ $(document).ready(function() {
             timer.play();
              $('#start').text('start1');
         }else{
-            alert("Sie haben mit " + points + " Punkte erreicht!");
+            alert("Sie haben " + points + " Punkte erreicht!");
             $('div').removeClass('mole').removeClass('hill');
             $('.field').addClass('empty');
             set(); 
